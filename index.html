@@ -1,0 +1,361 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Royal Taste | Premium Restaurant</title>
+  <meta name="description" content="Discover delicious food, special offers and convenient online ordering at The Royal Taste.">
+  <meta name="theme-color" content="#4b101e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">THE <span>ROYAL</span> TASTE</a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="navLinks">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#order" class="nav-order">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO THE ROYAL TASTE</p>
+        <h1>Where Every Bite<br>Feels <span>Royal.</span></h1>
+        <p>
+          Experience delicious flavors, freshly prepared meals
+          and unforgettable dining moments.
+        </p>
+        <div class="hero-buttons">
+          <a href="#order" class="btn btn-gold">Order Now</a>
+          <a href="#menu" class="btn btn-outline">Explore Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section container" id="about">
+      <div class="about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900"
+            alt="Elegant restaurant dining table"
+            loading="lazy">
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>A Royal Experience<br>In Every Meal</h2>
+          <p>
+            At The Royal Taste, we believe great food brings people
+            together. Our kitchen combines fresh ingredients,
+            carefully selected spices and a passion for cooking.
+          </p>
+          <p>
+            From delicious starters to traditional Pakistani
+            favorites, every meal is prepared with care.
+          </p>
+
+          <div class="features">
+            <div>✦ Fresh Ingredients</div>
+            <div>✦ Quality Food</div>
+            <div>✦ Friendly Service</div>
+            <div>✦ Memorable Flavors</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">EXPLORE OUR MENU</p>
+          <h2>Delicious Food For Everyone</h2>
+          <p>Discover your next favorite meal.</p>
+        </div>
+
+        <div class="category-list" id="categoryList">
+          <button class="category-btn active" data-category="All">All</button>
+          <button class="category-btn" data-category="Starters">Starters</button>
+          <button class="category-btn" data-category="Fast Food">Fast Food</button>
+          <button class="category-btn" data-category="Burgers">Burgers</button>
+          <button class="category-btn" data-category="Pizza">Pizza</button>
+          <button class="category-btn" data-category="BBQ">BBQ</button>
+          <button class="category-btn" data-category="Pakistani Cuisine">Pakistani</button>
+          <button class="category-btn" data-category="Desserts">Desserts</button>
+          <button class="category-btn" data-category="Drinks">Drinks</button>
+        </div>
+
+        <div class="food-grid" id="foodGrid">
+          <!-- JavaScript displays food items here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS SECTION -->
+    <section class="section container" id="offers">
+      <div class="section-heading">
+        <p class="eyebrow">SPECIAL DEALS</p>
+        <h2>Royal Offers</h2>
+        <p>Enjoy something special with every visit.</p>
+      </div>
+
+      <div class="offers-grid">
+        <article class="offer-card">
+          <div class="offer-number">20% OFF</div>
+          <h3>Family Feast</h3>
+          <p>Enjoy 20% off orders worth Rs. 3,000 or more.</p>
+          <small>Terms: One offer per order. Not valid with other discounts.</small>
+          <a href="#order" class="btn btn-dark">Order Now</a>
+        </article>
+
+        <article class="offer-card featured-offer">
+          <div class="offer-number">FREE DRINK</div>
+          <h3>Burger Combo</h3>
+          <p>Get one regular drink with any burger combo.</p>
+          <small>Terms: One regular drink per eligible combo. While available.</small>
+          <a href="#order" class="btn btn-dark">Order Now</a>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-number">SPECIAL DEAL</div>
+          <h3>Pizza Night</h3>
+          <p>Get Rs. 300 off a pizza order worth Rs. 2,000 or more.</p>
+          <small>Terms: Discount applies to pizza orders only.</small>
+          <a href="#order" class="btn btn-dark">Order Now</a>
+        </article>
+      </div>
+      <p class="placeholder-note">
+        Demo promotions: Replace these with your restaurant's
+        actual approved offers before publishing.
+      </p>
+    </section>
+
+    <!-- ONLINE ORDERING -->
+    <section class="section order-section" id="order">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ORDER ONLINE</p>
+          <h2>Your Royal Order</h2>
+          <p>Add your favorite food to your cart.</p>
+        </div>
+
+        <div class="cart-box">
+          <h3>🛒 Your Shopping Cart</h3>
+
+          <div id="cartItems">
+            <p class="empty-cart">Your cart is empty. Add something delicious!</p>
+          </div>
+
+          <div class="cart-total">
+            <span>Total Amount</span>
+            <strong id="cartTotal">Rs. 0</strong>
+          </div>
+
+          <button class="btn btn-gold full-btn" id="whatsappOrder">
+            Order Through WhatsApp
+          </button>
+
+          <p class="cart-note">
+            Your order will be prepared as a WhatsApp message.
+            Payment and delivery must be confirmed with the restaurant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section container" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">FOOD & MOMENTS</p>
+        <h2>Our Gallery</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+          alt="Freshly prepared pizza" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+          alt="Delicious burger" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700"
+          alt="Grilled food" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700"
+          alt="Dessert" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=700"
+          alt="Fresh salad" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?w=700"
+          alt="Restaurant food" loading="lazy">
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CUSTOMER EXPERIENCES</p>
+          <h2>What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Wonderful food and a lovely dining atmosphere."</p>
+            <h4>Guest One</h4>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"The menu has so many delicious options. Great experience!"</p>
+            <h4>Guest Two</h4>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Fresh food and friendly service. Would visit again."</p>
+            <h4>Guest Three</h4>
+          </article>
+        </div>
+
+        <p class="placeholder-note">
+          Sample testimonials only. Replace with genuine customer reviews.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section container" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Visit The Royal Taste</h2>
+        <p>We would love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Restaurant Information</h3>
+
+          <p><strong>📍 Address:</strong><br>
+            [REPLACE WITH REAL RESTAURANT ADDRESS]
+          </p>
+
+          <p><strong>📞 Phone:</strong><br>
+            [REPLACE WITH REAL PHONE NUMBER]
+          </p>
+
+          <p><strong>✉ Email:</strong><br>
+            [REPLACE WITH REAL EMAIL]
+          </p>
+
+          <p><strong>🕒 Opening Hours:</strong><br>
+            Monday – Sunday: [REPLACE WITH ACTUAL HOURS]
+          </p>
+
+          <div class="map-placeholder">
+            <p>Google Maps will appear here after adding the real restaurant location.</p>
+          </div>
+
+          <a href="#" class="btn btn-dark" id="directionsLink">
+            Get Directions
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Send Us a Message</h3>
+
+          <label for="customerName">Your Name</label>
+          <input type="text" id="customerName" required
+            minlength="2" placeholder="Enter your name">
+
+          <label for="customerEmail">Email Address</label>
+          <input type="email" id="customerEmail" required
+            placeholder="Enter your email">
+
+          <label for="customerMessage">Your Message</label>
+          <textarea id="customerMessage" required minlength="10"
+            placeholder="Write your message..."></textarea>
+
+          <button class="btn btn-gold full-btn" type="submit">
+            Validate Message
+          </button>
+
+          <p id="formFeedback" aria-live="polite"></p>
+          <small>
+            Demo form: validation works, but sending requires a
+            connected backend or form service.
+          </small>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-logo">THE ROYAL TASTE</h2>
+        <p>Where every bite feels royal.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>[YOUR PHONE NUMBER]</p>
+        <p>[YOUR EMAIL]</p>
+        <p>[YOUR ADDRESS]</p>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <a href="#" class="social-placeholder">Instagram (add real link)</a>
+        <a href="#" class="social-placeholder">Facebook (add real link)</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© <span id="currentYear"></span> The Royal Taste. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat"
+    aria-label="Order through WhatsApp" title="WhatsApp ordering">
+    WhatsApp
+  </a>
+
+</body>
+</html>
